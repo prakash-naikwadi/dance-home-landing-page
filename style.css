@@ -1,0 +1,255 @@
+/* Design Systems
+Fonts:
+font-family: 'Merriweather', serif;
+
+- FONT SIZES SYSTEM (px)
+    10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+- SPACING SYSTEM (px)
+    2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+/* ------------------- */
+/*     Global  Reset         */
+/* ------------------- */
+
+/* https://piccalil.li/blog/a-modern-css-reset/ */
+
+/* Box sizing */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+/* Reset Font Weights */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+}
+
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Merriweather", serif;
+}
+
+/* **************************** */
+/* header section */
+/* **************************** */
+
+header {
+  height: 100vh;
+
+  background-image: url(./images/hero-section-big.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding-top: 2.4rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-div img {
+  width: 10rem;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 6.4rem;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #8c8c8c;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.hero-section {
+  margin-left: 50rem;
+
+  position: relative;
+}
+
+.hero-heading {
+  font-size: 9.6rem;
+  font-weight: 900;
+  line-height: 1.2;
+  color: #262626;
+}
+
+.h-part-one {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+}
+
+.h-part-two {
+  margin-left: 9.6rem;
+}
+
+.heading-next-text {
+  font-size: 2.4rem;
+  color: #737373;
+  position: absolute;
+  /* top: 0; */
+  right: 35%;
+  bottom: 57%;
+}
+
+.btn-div a {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  padding: 1.4rem 4.6rem;
+  background-color: #404040;
+
+  position: absolute;
+  right: 4%;
+}
+
+.social-icon-list {
+  list-style: none;
+  padding-left: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+
+  position: absolute;
+  right: 4%;
+  top: 10%;
+}
+
+.social-icon-list img {
+  width: 20px;
+  height: 20px;
+}
+
+.timeline-list {
+  list-style: none;
+  padding: 0;
+  font-size: 1.4rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3.6rem;
+  margin-top: 5.8rem;
+
+  /* position: relative; */
+}
+
+.timeline-list-item {
+  display: flex;
+  align-items: center;
+  gap: 2.2rem;
+
+  position: relative;
+}
+
+.circle-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12px;
+  width: 12px;
+}
+
+.circle {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #737373;
+}
+
+.active-circle {
+  height: 12px;
+  width: 12px;
+  background-color: #262626;
+  /* border-radius: 50%; */
+  /* margin-right: 5px; */
+}
+
+.timeline-list-item p {
+  font-size: 1.4rem;
+}
+
+.text {
+  color: #737373;
+}
+
+.active-text {
+  color: #262626;
+  font-weight: 600;
+}
+
+.timeline-list-item::after {
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: #262626;
+  color: #262626;
+  position: absolute;
+  transform: rotate(90deg);
+  left: -2.2%;
+  top: 180%;
+}
+
+.text-container {
+  position: absolute;
+  bottom: -7.7%;
+  left: 30%;
+}
+
+.text-container h2 {
+  font-size: 4.6rem;
+  font-weight: 900;
+}
+.text-container p {
+  font-size: 1.5rem;
+  width: 350px;
+  margin-top: 2.4rem;
+  margin-bottom: 2.4rem;
+  /* font-weight: 900; */
+}
+
+.text-container-img {
+  width: 40rem;
+  height: 15rem;
+  overflow: hidden;
+  background-image: url(./images/hero-section-small.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
