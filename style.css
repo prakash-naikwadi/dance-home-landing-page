@@ -115,9 +115,6 @@ body {
 }
 
 /* top-container */
-.top-container {
-  /* display: flex; */
-}
 
 .container-top-section {
   display: flex;
@@ -255,9 +252,6 @@ body {
   line-height: 1.5;
 
   /* font-weight: 900; */
-}
-
-.text-container-img {
 }
 
 .text-container-img img {
