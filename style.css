@@ -91,12 +91,21 @@ body {
   width: 100%;
   height: 100%;
   z-index: -1;
+  object-fit: cover;
+}
+
+.line {
+  width: 45%;
+  height: 2px;
+  background-color: #000000;
+  margin-right: 25px;
 }
 
 .nav-list {
   list-style: none;
   display: flex;
   gap: 6.4rem;
+  padding: 0;
 }
 
 .nav-list a {
@@ -104,6 +113,11 @@ body {
   color: #8c8c8c;
   font-size: 1.4rem;
   font-weight: 600;
+  max-width: fit-content;
+}
+
+.nav-list a:hover {
+  color: #737373;
 }
 
 /* **************************** */
@@ -118,6 +132,7 @@ body {
 
 .left-side {
   width: 30%;
+  margin-right: 10px;
 }
 
 /* right-side */
@@ -163,6 +178,8 @@ body {
 .btn-div {
   display: flex;
   justify-content: flex-end;
+  margin-top: 3.2rem;
+  margin-bottom: 3.2rem;
 }
 
 .btn-div a {
@@ -194,11 +211,13 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
 }
 
 /* skills list */
 .skills-content {
   display: flex;
+  position: relative;
 }
 
 .vertical-line {
@@ -208,6 +227,10 @@ body {
   margin-right: 25px;
   margin-top: 10px;
   z-index: 1;
+
+  position: absolute;
+  left: -5px;
+  top: 18px;
 }
 
 .skills-list {
@@ -221,6 +244,7 @@ body {
   color: #828282;
   font-size: 14px;
   position: relative;
+  left: 10px;
 }
 
 .skills-list li::before {
@@ -231,7 +255,7 @@ body {
   border-radius: 50%;
   position: absolute;
   top: 5px;
-  left: -30px;
+  left: -20px;
   z-index: 0;
 }
 
@@ -264,9 +288,35 @@ body {
   margin-bottom: 10px;
   line-height: 1.5;
 
-  /* font-weight: 900; */
+  font-weight: 900;
 }
 
 .text-container-img img {
-  width: 50%;
+  display: block;
+  /* width: 300px; */
+  height: 20rem;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 48em) {
+  html {
+    font-size: 40%;
+  }
+  .vertical-line {
+    left: -5px;
+    top: 12px;
+  }
+}
+
+@media screen and (max-width: 26.56em) {
+  html {
+    font-size: 30%;
+  }
+}
+
+@media screen and (max-width: 23.43em) {
+  html {
+    font-size: 20%;
+  }
 }
