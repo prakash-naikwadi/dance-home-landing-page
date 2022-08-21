@@ -297,6 +297,35 @@ body {
   height: 20rem;
 }
 
+/* arrow */
+.arrow {
+  width: 120px;
+  display: flex;
+}
+
+.arrow-inline {
+  display: flex;
+  transform: rotate(90deg);
+}
+
+.arrow-line {
+  margin-top: 8px;
+  width: 90px;
+  background: #8c8c8c;
+  height: 5px;
+  /* float: left; */
+}
+
+.point {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 30px solid #8c8c8c;
+  /* transform: rotate(90deg); */
+  /* float: right; */
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 48em) {
